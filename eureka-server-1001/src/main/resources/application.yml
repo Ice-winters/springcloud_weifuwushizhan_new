@@ -1,0 +1,13 @@
+server:
+  port: 1001
+spring:
+  application:
+    name: eureka-server
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+  instance:
+    hostname: localhost                 # 这个hostname和下面的defaultZone 必须有一个，服务端这样的，原因不清楚
+#    service-url:
+#      defaultZone: http://localhost:${server.port}/eureka/

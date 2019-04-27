@@ -1,0 +1,12 @@
+server:
+  port: 9501
+spring:
+  application:
+    name: consumer-feign-hystrix
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1001/eureka/
+feign:
+  hystrix:
+    enabled: true      # 通过feign中继承的hystrix实现服务熔断功能

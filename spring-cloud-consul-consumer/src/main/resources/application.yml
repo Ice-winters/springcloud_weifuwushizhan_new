@@ -1,0 +1,15 @@
+server:
+  port: 8505
+spring:
+  application:
+    name: spring-cloud-consul-consumer
+  cloud:
+    consul:
+      discovery:
+        register: false                 # 是否注册在consul服务中心
+      host: 127.0.0.1
+      port: 8500
+#  cloud:
+#    consul:
+#      discovery:
+#        service-name: spring-cloud-consul-consumer
